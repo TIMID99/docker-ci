@@ -1,7 +1,8 @@
-version: "3.8"
+version: "3.3"
 services:
   webserver:
-    build: .
+    # build: .
+    image: meteorwoo99/web_count:1.0
     ports:
      - "8899:8899"
     depends_on:
