@@ -1,6 +1,6 @@
 node {
     stage('Clone repository'){
-        git credentialsId: 'git_access', url: 'https://github.com/TIMID99/test.git'
+        git credentialsId: 'git_access', url: 'https://github.com/TIMID99/docker-ci.git'
     }
     
     stage('Build image'){
@@ -8,7 +8,7 @@ node {
     }
     
     stage('Push Image') {
-        withDockerRegistry([ credentialsId: "docker-access", url: ""]) {
+        withDockerRegistry([ credentialsId: "docker-access", url: "" ]) {
         dockerImage.push()
         }
     }
