@@ -14,7 +14,7 @@ spec:
         tier: frontend
     spec:
       containers:
-      - image: chooooo/agora-mk2:front_final_6.0
+      - image: chooooo/agora-mk2:front_final_5.0
         name: front
         ports:
         - containerPort: 8081
