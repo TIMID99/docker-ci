@@ -33,5 +33,3 @@ spec:
   - port: 8080
     protocol: TCP
     nodePort: 31313
-  selector:
-    tier: frontend
