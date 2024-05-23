@@ -1,0 +1,6 @@
+resources:
+  - 0-db.yaml
+  - 0-back.yaml
+  - 0-front.yaml
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
