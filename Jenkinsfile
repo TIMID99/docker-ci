@@ -1,6 +1,6 @@
 node {
     stage('Clone repository'){
-        git credentialsId: 'git_access', url: 'https://github.com/TIMID99/docker-ci.git'
+        git credentialsId: 'git-access', url: 'https://github.com/TIMID99/docker-ci.git'
     }
     
     stage('Build image'){
